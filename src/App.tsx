@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { Navigation } from "./components/Navigation";
 import { DetailSinglePage } from "./pages/DetailSinglePage";
 import { FavoritesPage } from "./pages/FavoritesPage";
 import { MainPage } from "./pages/MainPage";
@@ -7,7 +8,8 @@ import { SignupPage } from "./pages/SignupPage";
 
 function App() {
   return (
-    <div>
+    <>
+      <Navigation/>
       <Routes>
         <Route path="/" element={ <MainPage/> } />
         <Route path="/signup" element={ <SignupPage/> } />
@@ -15,7 +17,7 @@ function App() {
         <Route path="/detail/:id" element={ <DetailSinglePage/> } />
         <Route path="/favorites" element={ <FavoritesPage/> } />
       </Routes>
-    </div>
+    </>
   );
 }
 
