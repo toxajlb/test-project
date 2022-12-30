@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import { Navigation } from "./components/Navigation";
+import { Navigation } from "./components/Navigation/Navigation";
 import { DetailSinglePage } from "./pages/DetailSinglePage";
 import { FavoritesPage } from "./pages/FavoritesPage";
-import { MainPage } from "./pages/MainPage";
+import { MainPage } from "./pages/MainPage/MainPage";
 import { SigninPage } from "./pages/SigninPage";
 import { SignupPage } from "./pages/SignupPage";
 
