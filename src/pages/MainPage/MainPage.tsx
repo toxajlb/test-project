@@ -1,6 +1,6 @@
 import { Card } from "../../components/Card/Card";
 import { Filter } from "../../components/Filter";
-import { Search } from "../../components/Search";
+import { Search } from "../../components/Search/Search";
 import classes from "./MainPage.module.scss";
 import { useEffect } from "react";
 import { fetchCards } from "../../store/actions/cardActions";

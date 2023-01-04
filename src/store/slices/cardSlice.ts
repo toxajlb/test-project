@@ -14,7 +14,7 @@ const initialState: CardState = {
 }
 
 export const cardSlice = createSlice({
-  name: 'team',
+  name: 'player',
   initialState,
   reducers: {
     fetching(state) {

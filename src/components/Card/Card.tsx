@@ -14,7 +14,7 @@ export function Card({ card }: CardProps) {
 
   return (
     <div className={classes.container} onClick={clickHandler}>
-      <p>{card.full_name}</p>
+      <p>{card.first_name} {card.last_name}</p>
     </div>
   )
 }
