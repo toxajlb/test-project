@@ -3,20 +3,27 @@
   margin-bottom: 2px;
 
   .input {
-    padding: 6px;
+    padding: 11px;
     margin-top: 8px;
     font-size: 17px;
     border: none;
-    width: 100%;
+    border-bottom: 4px solid lightsalmon;
+    width: 50%;
+    background-color: whitesmoke;
+  }
+  .input:focus {
+    outline: none;
   }
   .search {
     list-style-type: none;
     position: absolute;
+    margin: auto;
     left: 0;
     right: 0;
-    top: 42px;
+    top: 60px;
     height: 100px;
-    background-color: white;
+    width: 50%;
+    background-color: whitesmoke;
     overflow-y: scroll;
     .query {
       padding: 2px 4px;
