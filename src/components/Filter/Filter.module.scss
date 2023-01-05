@@ -4,6 +4,26 @@
   width: 100%;
   padding: 20px;
   border: none;
+  .clear {
+    background-color: cadetblue;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .clear:hover {
+    background-color: lightsalmon;
+    color: white;
+  }
+  .choose {
+    padding: 3px;
+  }
 }
 
 .loader {

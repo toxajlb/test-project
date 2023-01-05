@@ -20,7 +20,7 @@ export const fetchCards = () => {
 
       const response = await axios.request<ServerResponse<ICard>>(options);
 
-      dispatch(cardSlice.actions.fetchSucces(response.data.data));
+      dispatch(cardSlice.actions.fetchSuccess(response.data.data));
     }
     catch (e) {
       dispatch(cardSlice.actions.fetchError(e as Error));
