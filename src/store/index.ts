@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import cardReducer from "./slices/cardSlice";
+import filterReducer from "./slices/filterSlice";
 
 const rootReducer = combineReducers({
-  team: cardReducer
+  player: cardReducer,
+  team: filterReducer
 })
 
 export function setupStore() {

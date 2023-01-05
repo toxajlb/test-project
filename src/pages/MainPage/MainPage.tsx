@@ -1,5 +1,5 @@
 import { Card } from "../../components/Card/Card";
-import { Filter } from "../../components/Filter";
+import { Filter } from "../../components/Filter/Filter";
 import { Search } from "../../components/Search/Search";
 import classes from "./MainPage.module.scss";
 import { useEffect } from "react";
@@ -8,17 +8,17 @@ import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 
 export function MainPage() {
   const dispatch = useAppDispatch();
-  const { cards, error, loading } = useAppSelector(state => state.team);
+  const { cards, error, loading } = useAppSelector(state => state.player);
 
   useEffect(() => {
     dispatch(fetchCards());
   }, [])
   
   
-  if(loading) {
+  if (loading) {
     return <div className={classes.loader}></div>
   }
-  if(error) {
+  if (error) {
     return <p className={classes.error}>{error}</p>
   }
 

@@ -11,7 +11,7 @@ export const fetchCards = () => {
       const options = {
         method: 'GET',
         url: 'players',
-        params: {page: '0', per_page: '25'},
+        params: {page: '0', per_page: '50'},
         headers: {
           'X-RapidAPI-Key': '83b3d850f0mshb26091a1bc7956fp1209cfjsnc49d0963a38a',
           'X-RapidAPI-Host': 'free-nba.p.rapidapi.com'
