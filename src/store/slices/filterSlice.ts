@@ -4,11 +4,13 @@ import { ICardFilter } from "../../models/models"
 interface FilterState {
   loading: boolean
   filters: ICardFilter[]  
+  error: string
 }
 
 const initialState: FilterState = {
   loading: false,
-  filters: []
+  filters: [],
+  error: ''
 }
 
 export const filterSlice = createSlice({
@@ -22,6 +24,10 @@ export const filterSlice = createSlice({
       state.loading = false;
       state.filters = action.payload;
     },
+    fetchError(state, action: PayloadAction<Error>) {
+      state.loading = false
+      state.error = action.payload.message
+    }
   }
 })
 

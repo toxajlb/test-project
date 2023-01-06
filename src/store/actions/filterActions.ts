@@ -22,7 +22,7 @@ export const fetchFilter = () => {
       dispatch(filterSlice.actions.fetchSucces(response.data.data));
     }
     catch (e) {
-      
+      dispatch(filterSlice.actions.fetchError(e as Error));
     }
   }
 }

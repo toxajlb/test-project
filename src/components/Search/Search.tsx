@@ -28,7 +28,6 @@ export function Search() {
     setPlayers(response.data.data)
   } 
 
-
   useEffect(() => {
     if (input.value.length > 2) {
       searchCards().then(() => setDropdown(true));
