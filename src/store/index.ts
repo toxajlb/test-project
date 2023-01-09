@@ -1,10 +1,12 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import cardReducer from "./slices/cardSlice";
 import filterReducer from "./slices/filterSlice";
+import authReducer from "./slices/authSlice";
 
 const rootReducer = combineReducers({
   player: cardReducer,
-  team: filterReducer
+  team: filterReducer,
+  auth: authReducer
 })
 
 export function setupStore() {

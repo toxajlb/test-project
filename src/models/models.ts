@@ -28,6 +28,11 @@ export interface ISelect {
   name: string
 }
 
+export interface IAuth {
+  login: string
+  password: string
+}
+
 export interface ServerResponse<T> {
   data: T[]
   meta: {
