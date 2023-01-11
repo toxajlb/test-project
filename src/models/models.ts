@@ -28,8 +28,9 @@ export interface ISelect {
   name: string
 }
 
-export interface IAuth {
-  login: string
+export interface IUser {
+  username: string
+  email: string
   password: string
 }
 

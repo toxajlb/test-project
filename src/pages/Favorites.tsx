@@ -1,5 +1,5 @@
 
-export function FavoritesPage() {
+export function Favorites() {
   
   return (
     <div>
