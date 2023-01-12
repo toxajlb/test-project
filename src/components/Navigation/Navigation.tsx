@@ -14,7 +14,7 @@ export function Navigation() {
   return (
     <nav className={classes.navigation}>
 
-      <Link to="/" className={classes.main}>LOGO</Link>
+      <Link to="/" className={classes.main}>NBA PLAYERS INFO</Link>
 
       {currentUser && 
       <>
